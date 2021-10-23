@@ -29,7 +29,7 @@ namespace demoMultipleCalls
             // this list stores all my results
             List<IRestResponse> finishedTasks = new List<IRestResponse>();
 
-            // split the list of queries into batches of 30 each
+            // split the list of queries into batches of 10 each
             var batchCalls = splitList(lstRestRequests, 10);
             foreach (var batch in batchCalls)
             {
